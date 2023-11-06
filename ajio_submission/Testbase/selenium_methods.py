@@ -68,8 +68,7 @@ class Selenium_re_use_functions:
     def mouse_hover_and_click_on_element(self, locator):
         A_ch_obj = ActionChains(self.driver)
         web_el = self.driver.find_element(*locator)
-        A_ch_obj.move_to_element(web_el).perform()
-        A_ch_obj.click()
+        A_ch_obj.move_to_element(web_el).click().perform()
 
 
     def page_screen_shot_capture(self, path,s_shot_name):

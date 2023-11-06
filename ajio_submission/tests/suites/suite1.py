@@ -1,1 +1,0 @@
-# from ajio_submission.tests.scripts import

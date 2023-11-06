@@ -4,7 +4,7 @@ from selenium.webdriver.support.select import Select
 from datetime import datetime
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.expected_conditions import visibility_of_element_located, element_to_be_clickable
-from ajio_submission.page_home.utilities.excel_read_data import *
+from ajio_submission.page_home.utilities.excel_read_data import Excel_test_data, locators_fetch_from_excel
 class El_vis_enab_check():
     def __call__(self, locator_):
         self.locator_ = locator_
@@ -27,9 +27,10 @@ def wait_deco(func):
 class Selenium_re_use_functions:
 
 
-    def __init__(self, driver, excel_path, sheet_name):
+    def __init__(self, driver):
         self.driver = driver
-        locators_fetch_from_excel(excel_path, sheet_name)
+        locators_fetch_from_excel()
+
 
     @wait_deco
     def finding_an_element(self, locator):

@@ -4,7 +4,7 @@ from ajio_submission.Testbase.selenium_methods import Selenium_re_use_functions
 from ajio_submission.page_home.utilities.excel_read_data import Excel_test_data
 
 
-path = r"C:\development\pom_frame_work\ajio_submission\Results\menu_list"
+# path = r"C:\development\pom_frame_work\ajio_submission\Results\menu_list"
 
 class menu_header_validation(Selenium_re_use_functions, Excel_test_data):
 
